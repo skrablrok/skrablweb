@@ -266,11 +266,12 @@ main .naslov h1{
     .text_ref1{
         width: 80%;
     }
-    .text_ref2 .naslov h1{
+    .text_ref1 .referenca_naslov h1{
         font-size: clamp(18px, 2.8vw, 150px);
+        color: #161B21;
     }
-    .text_ref2 .opis h3{
-        font-size: clamp(18px, 1.5vw, 150px);
+    .text_ref1 .opis h3{
+        font-size: clamp(12px, 1.5vw, 150px);
         font-weight: 100;
         color: rgb(98, 87, 87);
     }
@@ -282,9 +283,13 @@ main .naslov h1{
         gap: 2vw;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
     .reference .slika{
         width: 80%;
+    }
+    .gumb_reference{
+        padding-top: 10vw;
     }
 }
 
