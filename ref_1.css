@@ -220,10 +220,13 @@ main .naslov h1{
     gap: 1vw;
     padding-left: 5vw;
 }
-.ovezava_do_spletne_strani h1{
+.povezava_do_spletne_strani h1{
     color: #161B21;
 }
-.povezava_do_spletne_strani a{
+.povezava_do_spletne_strani h1, a h1{
+    font-size: clamp(20px, 2vw, 120px);
+}
+.povezava_do_spletne_strani a h1, a{
     color: #F4A950;
 }
 .povezava_do_spletne_strani a h1{
