@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    background-color:#161B21;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+
+}
+ul li a{
+    position: relative; 
+}
+.nav_bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+
+}
+.nav_bar a{
+    max-width: max-content;
+    text-decoration: none;
+    color: #F4A950;
+    font-size: 16px;
+    border-bottom: solid hidden;
+}
+.nav_link:hover{
+    color: #F4A950;
+    transition: 0.3s;
+    
+}
+.nav_bar .nav_link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #F4A950;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s;
+
+}
+.nav_bar .nav_link:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+
+}
+
+.nav_link_gumb button{
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: .6vw;
+    padding-right: .6vw;
+    font-size: 18px;
+    background-color: #F4A950;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav_link_gumb button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+    transition: .3s;
+}
+
+.logo{
+    width: 6%;
+    display: flex;
+    height: 5%;
+    padding-left: 8vw;
+}
+.logo img{
+    width: clamp(100px, 5vw, 120px);
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+.nav_bar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-right: 5vw;
+
+}
+
+.navlist li{
+    display: inline;
+    padding: 15px;
+
+
+}
+#menu-icon{
+    color: #F4A950;
+    font-size: 55px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media (max-width:1035px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 40vh;
+        background:#161B21;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: flex;
+        margin: 8px 0;
+        margin-left: 0;
+        color: #ffffff;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+
+
+@media(max-width: 650px){
+    .logo{
+        width: 10%;
+        display: flex;
+        height: 10%;
+        padding-left: 8vw;
+    }
+    .logo img{
+        width: clamp(100px, 5vw, 120px);
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+    
+    }
+}
+@media(max-width: 450px){
+    .logo{
+        width: 15%;
+        display: flex;
+        height: 15%;
+        padding-left: 8vw;
+    }
+    .logo img{
+        width: clamp(100px, 5vw, 120px);
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .naslov{
+    color: #000;
+    padding-top: 10vw;
+    padding-bottom: 2vw;
+}
+main .naslov h1{
+    font-size: clamp(36px, 3vw, 200px);
+}
+@media(max-width:615px){
+    main .naslov{
+        padding-top: 25vw;
+        padding-bottom: 10vw;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 5vw;
+        padding-right: 7vw;
+    }
+}
+
+
+
+.zacetna_stran{
+    width: 40%;
+}
+.zacetna_stran img{
+    width: 100%;
+}
+.kontaktna_stran{
+    width: 40%;
+}
+.kontaktna_stran img{
+    width: 100%;
+}
+.o_nas_stran{
+    width: 40%;
+}
+.o_nas_stran img{
+    width: 100%;
+}
+.storitve_stran{
+    width: 40%;
+}
+.storitve_stran img{
+    width: 100%;
+}
+.reference_stran{
+    width: 40%;
+    padding-left: 5vw;
+}
+.reference_stran img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.slike_ref_1_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.slike_ref_1_2{
+    display: flex;
+    justify-content: space-around;
+}
+.naslov_ref{
+    padding-bottom: 2vw;
+    padding-top: 5vw;
+}
+.naslov_ref h2{
+    font-size: clamp(20px, 1.2vw, 120px);
+}
+
+@media(max-width:940px){
+    .slike_ref_1_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .slike_ref_1_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .slike_ref_1_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .zacetna_stran{
+        width: 80%;
+    }
+    .zacetna_stran img{
+        width: 100%;
+    }
+    .kontaktna_stran{
+        width: 80%;
+    }
+    .kontaktna_stran img{
+        width: 100%;
+    }
+    .o_nas_stran{
+        width: 80%;
+    }
+    .o_nas_stran img{
+        width: 100%;
+    }
+    .storitve_stran{
+        width: 80%;
+    }
+    .storitve_stran img{
+        width: 100%;
+    }
+    .reference_stran{
+        width: 80%;
+        padding-left: 0;
+    }
+    .reference_stran img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+footer{
+    background: #161B21;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.noga_spodi{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 3vw;
+    gap: 1vw;
+}
+.naslov{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vw;
+    font-size: clamp(8px, 0.9vw, 120px);
+}
+.info a{
+    color: #ffff;
+    font-weight: lighter;
+}
+.info h2{
+    color: #F4A950;
+    font-size: clamp(12px, 1.2vw, 120px);
+}
+
+.logo2{
+    width: 20%;
+}
+.logo2 img{
+    width: 100%;
+}
+.tel_mail{
+    display: flex;
+    gap:5vw;
+}
+
+.navbar2{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.navbar2 li a{
+    color: #f4aa50ac;
+    font-size: clamp(8px, 0.7vw, 20px);
+    text-decoration: none;
+}
+
+@media(max-width:453px){
+    .info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kontaktni obrazec za vprašanja">
+    <meta name="keywords" content="kontakt, sporočilo, pišite nam, vprašanja">
+    <meta name="author" content="Rok Škrabl">
+    <title>kontaktni obrazec</title>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="icon" href="slike/logo_black.png">
+
+</head>
+<body>
+    <header>
+            
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="index.html"><img src="slike/logo_white.png" alt="skrablweb"></a>
+            </div>
+            <ul class="navlist">
+                <div class="nav-links">
+                    <li><a class="nav_link" href="o_nas.html">O meni</a></li>
+                    <li><a class="nav_link" href="seznam_storitev.html">Seznam storitev</a></li>
+                    <li><a class="nav_link" href="reference.html">Reference</a></li>
+                    <li><a class="nav_link_gumb" href="kontakt.html"><button>Kontakt</button></a></li>
+                </div>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div> 
+        </div>   
+
+        
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <div class="naslov">
+            <h1>Kontaktirajte me</h1>
+        </div>
+        <hr>
+        <br>
+        <div class="container">
+            <h1>Pišite mi!</h1>
+            <p>Z veseljem vam odgovorim na razna uprašanja, ki mi jih zastavite!</p>
+            <div class="contac_box">
+                <div class="contact_left">
+                    <h3>Pošlji sporočilo</h3>
+
+
+                    <form action="https://formspree.io/f/xldrvaza" method="POST">
+                        <div class="input_row">
+                            <div class="input_group">
+                                <label for="Ime">Ime</label>
+                                <input type="text" name="Ime" placeholder="Miha Novak" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="Telefonska številka">Telefonska številka</label>
+                                <input type="text" name="Telefonska številka" placeholder="+386 41 123 456">
+                            </div>
+                        </div>
+                        <div class="input_row">
+                            <div class="input_group">
+                                <label for="Email">Email</label>
+                                <input type="email" name="Email" placeholder="miha.novak@gmail.com" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="Zadeva">Zadeva</label>
+                                <input type="text" name="Zadeva" placeholder="Zakaj nam pišete" required>
+                            </div>
+                        </div>
+                        <label for="Sporočilo">Sporočilo</label>
+                        <textarea rows="5" name="Sporočilo" placeholder="Vaše sporočilo"></textarea>
+
+                        <button type="submit">POŠLJI</button>
+                    </form>
+                </div>
+                <div class="contact_right">
+                    <h3>Govorite z mano</h3>
+                    <h5><u>Rok Škrabl</u></h5>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>skrablrok1@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Telefonska številka:</td>
+                            <td>+386 071 816 895</td>
+                        </tr>
+                        <tr>
+                            <td>Naslov:</td>
+                            <td>Beblerjev trg 10, 1000 Ljubljana</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        
+        <div class="logo2">
+            <img src="slike/logo_white.png" alt="skrablweb">
+        </div>
+
+
+        <div class="noga_spodi">
+            <div class="info">
+                <div class="tel_mail">
+                    <div class="telefon">
+                        <h2>Tel.:</h2>
+                        <a href="tel: +386 30 239 005">+386 71 816 895</a>
+                    </div>
+                    <div class="mail">
+                        <h2>Mail.:</h2>
+                        <a href="mailto: skrablrok1@gmail.com">skrablrok1@gmail.com</a>
+                    </div>
+                </div>
+                <div class="lokacija">
+                    <h2>Lokacija.:</h2>
+                    <a href="#">eblerjev trg 10, 1000 Ljubljana, Slovenija</a>
+                </div>
+                
+            </div>
+            
+            
+    
+    
+            <br>
+    
+            <ul class="navbar2">
+                <li><a href="index.html" class="active">DOMOV</a></li>
+                <li><a href="reference.html">REFERENCE</a></li>
+                <li><a href="seznam_storitev.html">SEZNAM STORITEV</a></li>
+                <li><a href="o_nas.html">O MENI</a></li>
+                <li><a href="Kontakt.html">KONTAKT</a></li>
+            </ul>
+        </div>
+
+        <br>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
