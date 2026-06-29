@@ -1415,7 +1415,7 @@ a{
 }
 
 .storitev{
-    width: 16vw;
+    width: 13vw;
     border-radius: 15px;
     transition: box-shadow 0.3s ease;
     height: fit-content;
@@ -1554,11 +1554,11 @@ a{
         padding-right: 7vw;
     }
     .storitev{
-        width: 30vw;
+        width: 24vw;
         height: fit-content;
     }
      #storitve .hitrost,#storitve .seo,#storitve .smma,#storitve .trgovina,#storitve .stran,#storitve .oblikovanje{
-        height: 20vw;
+        height: 18vw;
      }
      .storitev .text{
         padding: 3vw;
@@ -1585,13 +1585,13 @@ a{
         padding-right: 7vw;
     }
     .storitev{
-        width: 62vw;
+        width: 52vw;
         height: fit-content;
         padding-bottom: 5vw;
     }
 
      #storitve .hitrost,#storitve .seo,#storitve .smma,#storitve .trgovina,#storitve .stran,#storitve .oblikovanje{
-        height: 40vw;
+        height: 35vw;
      }
      .storitev .text{
         padding: 4vw;
