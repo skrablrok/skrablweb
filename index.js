@@ -6,12 +6,12 @@
     // Skip on return visits within the same browser session
     if (sessionStorage.getItem('swIntro')) {
         overlay.remove();
-        document.body.style.overflow = '';
         return;
     }
 
-    // Lock scroll while overlay is visible
-    document.body.style.overflow = 'hidden';
+    // Lock scroll while overlay is visible — use a class on html so that
+    // scrollbar-gutter:stable keeps the gutter reserved and no CLS occurs
+    document.documentElement.classList.add('intro-active');
 
     // Split "SKRABLWEB" into individually-animated letters
     const logo = document.getElementById('intro-logo');
@@ -29,7 +29,7 @@
 
     setTimeout(() => {
         overlay.classList.add('exit');
-        document.body.style.overflow = '';
+        document.documentElement.classList.remove('intro-active');
         sessionStorage.setItem('swIntro', '1');
     }, EXIT_AT);
 

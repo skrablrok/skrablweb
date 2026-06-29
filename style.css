@@ -121,6 +121,15 @@
     #intro-overlay { display: none; }
 }
 
+/* Reserve scrollbar gutter at all times so showing/hiding the
+   scrollbar never causes a layout shift (CLS fix).             */
+html {
+    scrollbar-gutter: stable;
+}
+html.intro-active {
+    overflow: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
