@@ -290,6 +290,18 @@ if (element) typeEffect();
     });
   });
 
+  /* ---- BROWSE: swipe left/right on touch devices ---- */
+  let touchStartX = 0;
+  carousel.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  carousel.addEventListener('touchend', e => {
+    const delta = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(delta) < 40 || stage.classList.contains('detail')) return;
+    if (delta < 0) updatePositions(Math.min(activeIndex + 1, images.length - 1));
+    else           updatePositions(Math.max(activeIndex - 1, 0));
+  }, { passive: true });
+
   /* ---- DETAIL: swap to split layout, image stays in flow ---- */
   function openDetail(i) {
     const d = projectData[i];
