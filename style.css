@@ -2062,11 +2062,11 @@ a{
 
 .contact-container {
     width: 100%;
+    box-sizing: border-box;
     background: #f9f9f9;
     border-radius: 10px ;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     font-family: sans-serif;
-
 }
 
 .contact-container h2 {
