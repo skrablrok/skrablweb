@@ -2750,7 +2750,7 @@ textarea:focus {
 
 /* Workflow grid — card borders look better individually on small screens */
 @media (max-width: 540px) {
-    .workflow { padding: 6vw 4vw; }
+    .workflow { padding: 6vw 4vw; margin-top: 12vw; }
     .workflow-top { margin-bottom: 36px; }
     .card { border-right: none; border-bottom: 1px solid #e5e7eb; }
     .card:last-child { border-bottom: none; }
@@ -2776,9 +2776,19 @@ textarea:focus {
 }
 
 /* Gallery / reference intro on homepage */
-@media (max-width: 480px) {
-    #galerija-text { padding-left: 4vw; padding-top: 10vw; }
-    #manjsi-text   { width: 96%; }
+@media (max-width: 600px) {
+    #galerija-text {
+        padding-left: 5vw;
+        padding-top: 10vw;
+        padding-bottom: 6vw;
+        gap: 14px;
+        width: 92%;
+    }
+    #galerija-text h2 { font-size: clamp(22px, 5.5vw, 36px); }
+    .ref-h2-extra { display: none; }
+    #manjsi-text { width: 100%; font-size: clamp(14px, 3.5vw, 18px); }
+    #vec_referenc { padding: 10px 20px; }
+    #vec_referenc p { font-size: clamp(13px, 3vw, 16px); }
 }
 
 /* Contact form section — smaller screens */
