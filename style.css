@@ -287,8 +287,6 @@ ul li a{
 }
 /* Pre-size FA icon slots before async FA loads — prevents CLS */
 .fas, .fab, .far, .fa { display: inline-block; min-width: 1em; }
-/* Reserve space for images that have no explicit dimensions */
-#desna_o_nas img { aspect-ratio: 4 / 3; }
 .ref-detail .detail-image { aspect-ratio: 16 / 10; }
 /* Stil za Dropdown kontejner */
 .dropdown {
@@ -1681,7 +1679,7 @@ a{
 
 /* DESNA STRAN */
 #desna_o_nas img{
-    width: 70%;
+    width: 90%;
     z-index: 1;
 }
 #desna_o_nas{
@@ -1812,7 +1810,7 @@ a{
         width: 90%;
     }
     #desna_o_nas img{
-        width: 80%;
+        width: 95%;
     }
 }
 @media(max-width: 400px){
@@ -2715,7 +2713,7 @@ textarea:focus {
         width: 92%;
     }
     #desna_o_nas img {
-        width: 85%;
+        width: 95%;
     }
 }
 
