@@ -2136,6 +2136,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     font-size: 1.1rem;
     cursor: pointer;
     width: 100%;
+    box-sizing: border-box;
     transition: background 0.3s;
 }
 .submit-btn:hover{
