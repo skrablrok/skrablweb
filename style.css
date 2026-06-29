@@ -289,6 +289,9 @@ ul li a{
     line-height: 0;
     padding: 4px;
 }
+#menu-icon .icon-close { display: none; }
+#menu-icon.is-open .icon-hamburger { display: none; }
+#menu-icon.is-open .icon-close { display: block; }
 .nav-chevron {
     vertical-align: middle;
     margin-left: 3px;

@@ -43,6 +43,7 @@ let navlist = document.querySelector('.navlist');
 function toggleMenu() {
     const isOpen = navlist.classList.toggle('open');
     menu.setAttribute('aria-expanded', isOpen);
+    menu.classList.toggle('is-open', isOpen);
 }
 menu.onclick = toggleMenu;
 menu.addEventListener('keydown', (e) => {
