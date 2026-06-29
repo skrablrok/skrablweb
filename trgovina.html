@@ -1,17 +1,21 @@
 ﻿    <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Inline&family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,400;0,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r153/three.min.js"></script>
-<script src="https://www.goat1000.com/tagcanvas.min.js"></script>
-<link rel="stylesheet" href="storitve.css">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+<link rel="preload" as="image" href="index/hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="index/spletne-trgovine.webp" fetchpriority="high">
+<link rel="preload" as="font" href="fonts/bebas-neue-400-latin.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/poppins-300-latin.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/poppins-400-latin.woff2" type="font/woff2" crossorigin>
+<style>*{padding:0;margin:0}body{overflow-x:hidden}p,a,h1,h2,h3,h4,span,button,label{font-family:'Poppins',sans-serif}button{font-family:'Poppins',sans-serif}ul li a{position:relative}#main-content{opacity:1;display:block}.nav_bar{position:fixed;top:0;left:0;width:95%;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding-right:5vw;background:transparent;transition:.3s}.nav_bar.scrolled{background:#fff;box-shadow:rgba(0,0,0,.15) 0 5px 15px}.nav_bar.scrolled .nav_link{color:#0d1e34}.nav_bar a{max-width:max-content;text-decoration:none;color:#fff;font-size:clamp(13px,1vw,50px)}.nav_link_gumb button{border:none;border-radius:10px;padding:.3vw .6vw;font-size:clamp(13px,1vw,50px);background-color:#e6580e;color:#0d1e34}.logo{width:clamp(200px,13.8vw,1000px);display:flex;height:5%;padding-left:8vw}.logo img{width:100%;height:100%}.logo2{width:clamp(200px,13.8vw,1000px);display:none;height:5%;padding-left:8vw}.logo2 img{width:100%;height:100%;display:block}.navlist li{display:inline;padding:15px}#menu-icon{color:#0d1e34;z-index:10001;cursor:pointer;display:none;line-height:0;padding:4px}.fas,.fab,.far,.fa{display:inline-block;min-width:1em}.sp-intro-img img{aspect-ratio:4/3}.sp-cta-img{aspect-ratio:16/10}.dropdown{position:relative;display:inline-block}.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#fff;min-width:220px;box-shadow:0 10px 25px rgba(0,0,0,.1);border-radius:8px;padding:10px 0;z-index:3000}.naslovna{display:flex;flex-direction:column;justify-content:center;position:relative;height:50vh;background-image:linear-gradient(rgba(10,20,40,0.7)),url(index/hero.webp);background-position:center;background-repeat:no-repeat;background-size:cover;clip-path:polygon(0 0,100% 0,100% 75%,0 100%);animation:sp-naslovna-reveal 1s cubic-bezier(0.23,1,0.32,1) both}@keyframes sp-naslovna-reveal{from{clip-path:polygon(0 0,100% 0,100% 0%,0 0%);opacity:0}to{clip-path:polygon(0 0,100% 0,100% 75%,0 100%);opacity:1}}#naslovna_text{position:relative;width:50%;left:10%}#naslov_strani{position:relative;background:linear-gradient(to right,#e6580e,#f7722a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,5vw,90px)}#opis_strani{position:relative;color:#fff;font-family:'Poppins',sans-serif;font-size:clamp(14px,1vw,50px);font-weight:200}@media(max-width:1400px){#naslov_strani{font-size:clamp(20px,7vw,90px)}#opis_strani{font-size:clamp(14px,1.2vw,50px)}#naslovna_text{width:80%}}@media(max-width:1035px){#menu-icon{display:block;color:#fff}.nav_bar.scrolled #menu-icon{color:#0d1e34}.navlist{position:fixed;top:0;right:-100%;width:250px;height:fit-content;background:#0d1e34;display:flex;align-items:center;flex-direction:column;padding:80px 0;transition:all .55s ease;overflow-y:auto;z-index:10000}.navlist.open{right:0}.navlist li{display:block;width:100%;text-align:center;padding:10px 0}.navlist a{display:inline-block;margin:10px 0;color:#fff!important;font-size:20px}.nav_link_gumb button{font-size:20px}.dropdown{width:100%}.dropdown:hover .dropdown-menu{display:none}.dropdown-menu{position:relative;top:0;left:0;width:85%;margin:10px auto;box-shadow:none;padding:0}.dropdown-menu.show{display:block!important}.logo,.logo2{padding-left:5vw}}@media(max-width:850px){#naslov_strani{font-size:clamp(20px,9vw,90px)}#opis_strani{font-size:clamp(12px,1.2vw,50px)}}@media(max-width:550px){#naslov_strani{font-size:clamp(20px,10vw,90px)}#opis_strani{font-size:clamp(9px,1.5vw,70px)}}@media(max-width:500px){.logo{width:clamp(160px,12vw,1000px);padding-left:4vw}.logo2{width:clamp(160px,12vw,1000px);display:none;padding-left:4vw}}</style>
+<link rel="preload" as="style" href="fonts.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="fonts.css"></noscript>
+<link rel="preload" as="style" href="storitve.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="storitve.css"></noscript>
 <title>Izdelava spletnih trgovin | Prodajajte na spletu | SKRABLWEB</title>
 <meta name="description" content="Nudim celovito izdelavo spletnih trgovin napisane z kodo v celoti . Povečajte svojo prodajo z varno, hitro in uporabniku prijazno trgovino.">
 <link rel="canonical" href="https://www.skrablweb.si/izdelava-spletne-trgovine">
@@ -34,11 +38,10 @@
                 <a href="index.html"><img src="index/logo_black.webp" alt="skrablweb"></a>
             </div>
             <ul class="navlist">
-                <div class="nav-links">
                     <li><a class="nav_link" href="index.html#o_nas">O meni</a></li>
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="nav_link" id="services-trigger">
-                            Storitve <i class='bx bx-chevron-down'></i>
+                        <a href="javascript:void(0)" class="nav_link" id="services-trigger" aria-haspopup="true" aria-expanded="false">
+                            Storitve <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="dropdown-menu" id="services-menu">
                             <li><a href="stran.html">Izdelava spletnih strani</a></li>
@@ -51,9 +54,8 @@
                     </li>
                     <li><a class="nav_link" href="reference.html">Reference</a></li>
                     <li><a class="nav_link_gumb" href="index.html#kontakt-obr-vse"><button>Kontakt</button></a></li>
-                </div>
             </ul>
-            <div class="bx bx-menu" id="menu-icon"></div> 
+            <div id="menu-icon" role="button" tabindex="0" aria-label="Odpri meni" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></div> 
         </div> 
 
 
@@ -73,7 +75,7 @@
 
         <section class="sp-intro">
             <div class="sp-intro-img">
-                <img src="index/spletne-trgovine.webp" alt="Spletna trgovina">
+                <img src="index/spletne-trgovine.webp" alt="Spletna trgovina" fetchpriority="high">
             </div>
             <div class="sp-intro-text">
                 <span class="sp-tag">SPLETNA TRGOVINA</span>
@@ -94,7 +96,7 @@
                 <p class="sp-process-sub">Od arhitekture do lansiranja v petih korakih</p>
                 <p class="sp-process-desc">Vsak projekt pristopimo sistematično. Naš preverjen petkorački proces zagotavlja preglednost, hitrost in rezultate, ki presegajo pričakovanja.</p>
             </div>
-            <img src="index/spletne-trgovine.webp" alt="Spletna trgovina proces" class="sp-process-banner">
+            <img src="index/spletne-trgovine.webp" alt="Spletna trgovina proces" class="sp-process-banner" loading="lazy">
             <div class="sp-steps-grid">
                 <div class="sp-card">
                     <i class="fas fa-sitemap sp-card-icon-el"></i>
@@ -141,7 +143,7 @@
                 </div>
             </div>
             <div class="sp-cta-img-wrap">
-                <img src="index/spletne-trgovine.webp" alt="Spletna trgovina" class="sp-cta-img">
+                <img src="index/spletne-trgovine.webp" alt="Spletna trgovina" class="sp-cta-img" loading="lazy">
             </div>
         </section>
     </main>
@@ -160,7 +162,7 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <div class="logo_noga">
-                    <span class="logo-icon"><img src="index/logo_noga.webp" alt=""></span> <span class="logo-text">SKRABLWEB</span>
+                    <span class="logo-icon"><img src="index/logo_noga.webp" alt="" loading="lazy"></span> <span class="logo-text">SKRABLWEB</span>
                 </div>
                 <p class="brand-description">
                    Vaš partner za sodobno izdelavo spletnih strani, kjer združujemo napredno tehnologijo s kreativnim dizajnom.

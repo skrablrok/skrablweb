@@ -40,10 +40,14 @@ let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
 // Hamburger menu logika
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('open');
+function toggleMenu() {
+    const isOpen = navlist.classList.toggle('open');
+    menu.setAttribute('aria-expanded', isOpen);
 }
+menu.onclick = toggleMenu;
+menu.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); }
+});
 
 // Scroll logika
 window.addEventListener("scroll", function() {
@@ -89,12 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (dropdownLink) {
         dropdownLink.addEventListener('click', function(e) {
-            // Samo na mobilni ločljivosti ustavimo privzeto delovanje
             if (window.innerWidth <= 1035) {
-                e.preventDefault(); // Prepreči skok na stran
-                e.stopPropagation(); // Prepreči zapiranje zaradi drugih klikov
-                dropdownMenu.classList.toggle('show');
-                console.log("Dropdown toggled"); // Za test v konzoli
+                e.preventDefault();
+                e.stopPropagation();
+                const isOpen = dropdownMenu.classList.toggle('show');
+                dropdownLink.setAttribute('aria-expanded', isOpen);
             }
         });
     }
