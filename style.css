@@ -291,7 +291,7 @@ ul li a{
 }
 #menu-icon .icon-close { display: none; }
 #menu-icon.is-open .icon-hamburger { display: none; }
-#menu-icon.is-open .icon-close { display: block; }
+#menu-icon.is-open .icon-close { display: block; color: #ffffff; }
 .nav-chevron {
     vertical-align: middle;
     margin-left: 3px;
