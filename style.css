@@ -1791,11 +1791,14 @@ a{
         gap: 5vw;
     }
     #leva_o_nas{
-        width: 85%;
+        width: 88%;
         padding-left: 0;
     }
     #desna_o_nas{
-        width: 85%;
+        width: 88%;
+    }
+    #desna_o_nas img{
+        width: 100%;
     }
 }
 @media(max-width: 600px){
@@ -1804,13 +1807,13 @@ a{
         padding-top: 1.5vw;
     }
     #leva_o_nas{
-        width: 90%;
+        width: 92%;
     }
     #desna_o_nas{
-        width: 90%;
+        width: 92%;
     }
     #desna_o_nas img{
-        width: 95%;
+        width: 100%;
     }
 }
 @media(max-width: 400px){
@@ -2160,10 +2163,11 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         width: 100%;
         gap: 6vw;
         overflow: visible;
-        padding-bottom: 8vw;
+        padding: 6vw 5vw 10vw 5vw;
     }
     #kontakt-obr{
-        width: 90%;
+        width: 100%;
+        padding-left: 0;
     }
     #globe-wrap {
         width: 260px;
@@ -2720,7 +2724,7 @@ textarea:focus {
         width: 92%;
     }
     #desna_o_nas img {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -2733,11 +2737,13 @@ textarea:focus {
     .workflow-grid { border-radius: 8px; overflow: hidden; }
 }
 
-/* Services grid (homepage) — image height correction for all breakpoints */
+/* Services grid — switch to aspect-ratio on mobile so images are
+   always proportional regardless of column count or screen width  */
 @media (max-width: 814px) {
     #storitve .hitrost,#storitve .seo,#storitve .smma,
     #storitve .trgovina,#storitve .stran,#storitve .oblikovanje {
-        height: 22vw;
+        height: auto;
+        aspect-ratio: 4 / 3;
     }
 }
 @media (max-width: 620px) {
@@ -2747,10 +2753,6 @@ textarea:focus {
         padding: 6vw 4vw;
     }
     .storitev { width: 100%; }
-    #storitve .hitrost,#storitve .seo,#storitve .smma,
-    #storitve .trgovina,#storitve .stran,#storitve .oblikovanje {
-        height: 30vw;
-    }
 }
 @media (max-width: 420px) {
     #storitve {
@@ -2758,10 +2760,6 @@ textarea:focus {
         padding: 6vw 5vw;
     }
     .storitev { width: 100%; }
-    #storitve .hitrost,#storitve .seo,#storitve .smma,
-    #storitve .trgovina,#storitve .stran,#storitve .oblikovanje {
-        height: 52vw;
-    }
     .storitev .text h3 { font-size: clamp(14px, 4.5vw, 150px); }
     .storitev .text p  { font-size: clamp(11px, 3vw, 120px); }
 }
@@ -2859,12 +2857,14 @@ textarea:focus {
 }
 
 /* ============================================================
-   MOBILE MARQUEE — reduce height so it doesn't dominate the
-   viewport on phones; content is decorative, not primary
+   MOBILE MARQUEE — collapse to content height; the 100vh is
+   a desktop parallax trick that just wastes space on phones
    ============================================================ */
 @media (max-width: 768px) {
     #scroll-marquee {
-        min-height: 55vh;
+        min-height: auto;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
 }
 
