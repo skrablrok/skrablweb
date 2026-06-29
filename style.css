@@ -1415,7 +1415,7 @@ a{
 }
 
 .storitev{
-    width: 20vw;
+    width: 16vw;
     border-radius: 15px;
     transition: box-shadow 0.3s ease;
     height: fit-content;
@@ -1495,7 +1495,7 @@ a{
 
 
 .storitev .text{
-    padding: 1vw;
+    padding: 1.8vw;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #050a23;
@@ -1554,14 +1554,14 @@ a{
         padding-right: 7vw;
     }
     .storitev{
-        width: 35vw;
+        width: 30vw;
         height: fit-content;
     }
      #storitve .hitrost,#storitve .seo,#storitve .smma,#storitve .trgovina,#storitve .stran,#storitve .oblikovanje{
         height: 20vw;
      }
      .storitev .text{
-        padding: 2vw;
+        padding: 3vw;
     }
      .storitev .text h3{
         font-size: clamp(10px, 2vw, 150px);
@@ -1585,16 +1585,16 @@ a{
         padding-right: 7vw;
     }
     .storitev{
-        width: 70vw;
+        width: 62vw;
         height: fit-content;
         padding-bottom: 5vw;
     }
 
      #storitve .hitrost,#storitve .seo,#storitve .smma,#storitve .trgovina,#storitve .stran,#storitve .oblikovanje{
-        height: 45vw;
+        height: 40vw;
      }
      .storitev .text{
-        padding: 2.2vw;
+        padding: 4vw;
         height: fit-content;
     }
      .storitev .text h3{
