@@ -1,0 +1,713 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Pacifico&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://www.goat1000.com/tagcanvas.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Vrhunska izdelava spletnih strani in digitalni marketing | SKRABLWEB</title>
+    <meta name="description" content="Specializiran sem za izdelavo modernih spletnih strani, trgovin in UI/UX dizajn. Povečajte svojo vidnost na spletu z mojo SEO optimizacijo.">
+    <link rel="canonical" href="https://www.skrablweb.si/">
+    <link rel="icon" type="image/png" href="S.webp">
+
+
+    
+</head>
+
+<body>
+    <!-- ===== INTRO OVERLAY ===== -->
+    <div id="intro-overlay" aria-hidden="true">
+        <div class="intro-content">
+            <div class="intro-logo" id="intro-logo"></div>
+            <img class="intro-img" src="index/logo_white.webp" alt="SKRABLWEB" />
+            <p class="intro-sub">SPLETNE STRANI PO MERI</p>
+            <span class="intro-line"></span>
+        </div>
+        <span class="intro-corner intro-corner--tl"></span>
+        <span class="intro-corner intro-corner--tr"></span>
+        <span class="intro-corner intro-corner--bl"></span>
+        <span class="intro-corner intro-corner--br"></span>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    
+
+    
+    <div class="nav_bar">
+        <div class="logo">
+            <a href="index.html"><img src="index/logo_white.webp" fetchpriority="high" alt="skrablweb"></a>
+        </div>
+        <div class="logo2">
+            <a href="index.html"><img src="index/logo_black.webp" alt="skrablweb"></a>
+        </div>
+        <ul class="navlist">
+            <div class="nav-links">
+                <li><a class="nav_link" href="index.html#o_nas">O meni</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="nav_link" id="services-trigger">
+                        Storitve <i class='bx bx-chevron-down'></i>
+                    </a>
+                    <ul class="dropdown-menu" id="services-menu">
+                        <li><a href="stran.html">Izdelava spletnih strani</a></li>
+                        <li><a href="trgovina.html">Izdelava spletne trgovine</a></li>
+                        <li><a href="dizajn.html">UI/UX Dizajn</a></li>
+                        <li><a href="katalogi.html">Katalogi in slikanje </a></li>
+                        <li><a href="seo.html">SEO optimizacija</a></li>
+                        <li><a href="marketing.html">Digitalni marketing</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav_link" href="reference.html">Reference</a></li>
+                <li><a class="nav_link_gumb" href="index.html#kontakt-obr-vse"><button>Kontakt</button></a></li>
+            </div>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div> 
+    </div>   
+    <header id="main-content">
+        
+            
+       <div class="hero">
+            <div id="skrablweb">
+                <h1 id="naslov1">SKRABLWEB</h1>
+                <h1 id="naslov2">SKRABL<br>WEB</h1>
+                <canvas id="liquidCanvas1" class="liquid-overlay"></canvas>
+                <canvas id="liquidCanvas2" class="liquid-overlay"></canvas>
+            </div>
+
+            
+
+            <div class="gumb_kontakt">
+                <a href="index.html#kontakt-obr-vse" class="hero-btn">Sodelujmo</a>
+            </div>
+            <svg width="0" height="0">
+                <filter id="liquid" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+                    <feColorMatrix in="blur" type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 20 -10" result="goo"/>
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+                <filter id="metaball" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur"/>
+                    <feColorMatrix in="blur" type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 28 -13" result="goo"/>
+                </filter>
+                <filter id="metaball-mobile" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+                    <feColorMatrix in="blur" type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 18 -8" result="goo"/>
+                </filter>
+                <clipPath id="textClip1" clipPathUnits="userSpaceOnUse">
+                    <text id="svgClipText1" font-family="'Bebas Neue', sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="middle"></text>
+                </clipPath>
+                <clipPath id="textClip2" clipPathUnits="userSpaceOnUse">
+                    <text id="svgClipText2a" font-family="'Bebas Neue', sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="middle"></text>
+                    <text id="svgClipText2b" font-family="'Bebas Neue', sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="middle"></text>
+                </clipPath>
+            </svg>
+
+            
+            <div id="text1">
+                <p id="typewriter"></p>
+            </div>
+
+
+            
+       </div>           
+
+        
+
+    </header>
+
+    <section id="scroll-marquee">
+        <div class="sm-row" data-dir="-1">
+            <div class="sm-track">SPLETNE STRANI &nbsp;·&nbsp; PO MERI &nbsp;·&nbsp; SKRABLWEB &nbsp;·&nbsp; SPLETNE STRANI &nbsp;·&nbsp; PO MERI &nbsp;·&nbsp; SKRABLWEB &nbsp;·&nbsp; SPLETNE STRANI &nbsp;·&nbsp; PO MERI &nbsp;·&nbsp; SKRABLWEB &nbsp;·&nbsp;</div>
+        </div>
+        <div class="sm-row" data-dir="1">
+            <div class="sm-track">DIZAJN &nbsp;·&nbsp; RAZVOJ &nbsp;·&nbsp; OPTIMIZACIJA &nbsp;·&nbsp; SEO &nbsp;·&nbsp; HITRO &nbsp;·&nbsp; DIZAJN &nbsp;·&nbsp; RAZVOJ &nbsp;·&nbsp; OPTIMIZACIJA &nbsp;·&nbsp; SEO &nbsp;·&nbsp; HITRO &nbsp;·&nbsp;</div>
+        </div>
+        <div class="sm-row" data-dir="-1">
+            <div class="sm-track">MODERNA &nbsp;·&nbsp; SPLETNA &nbsp;·&nbsp; REŠITEV &nbsp;·&nbsp; ZA &nbsp;·&nbsp; VAŠE &nbsp;·&nbsp; PODJETJE &nbsp;·&nbsp; MODERNA &nbsp;·&nbsp; SPLETNA &nbsp;·&nbsp; REŠITEV &nbsp;·&nbsp; ZA &nbsp;·&nbsp; VAŠE &nbsp;·&nbsp; PODJETJE &nbsp;·&nbsp;</div>
+        </div>
+    </section>
+
+    <main>
+        <div class="main-vse">
+            
+            <div class="reference" id="reference" data-bg = "#050a23">
+                <div id="galerija-text">
+                    <h2>Oglejte si galerijo mojih referenc in se prepričajte, da mi lahko zaupate</h2>
+                    <p id="manjsi-text">Vsaka stran ki je predstavljena je v celoti narejena v kodi po naročilu. Brez potrebnega mesečnega plačila!</p>
+                    <a href="reference.html"><button id="vec_referenc"><p>VSE REFERENCE</p></button></a>
+                </div>
+
+
+                <div class="ref-stage" id="ref-stage">
+                    <!-- BROWSE MODE -->
+                    <div class="ref-carousel" id="ref-carousel">
+                    <img src="index/ref_manus.webp"   alt="Manus Aurea"  loading="lazy"          class="slika" data-index="0" />
+                    <img src="index/ref_matkom.webp"  alt="Matkom"    loading="lazy"             class="slika" data-index="1" />
+                    <img src="index/ref_btinox.webp"  alt="BTINOX"       loading="lazy"          class="slika" data-index="2" />
+                    <img src="index/ref_novak.webp"   alt="Slikopleskarstvo Novak" loading="lazy" class="slika" data-index="3" />
+                    <img src="index/ref_vipstroj.webp" alt="VIP STROJ"     loading="lazy"        class="slika" data-index="4" />
+                    </div>
+
+                    <!-- DETAIL MODE (populated by JS) -->
+                    <div class="ref-detail" id="ref-detail" aria-live="polite"></div>
+                </div>
+
+
+
+                <section class="workflow">
+                    <div class="workflow-top">
+                        <div class="workflow-left">
+                            <span class="tag">KAKO DELUJEM</span>
+                            <h2>Izdelava v<br>štirih korakih dela</h2>
+                        </div>
+
+                        <div class="workflow-right">
+                            <p>
+                                Jasni rezultati ob vsakem mejniku — da vi,
+                                vaša stranka in razvijalec vedno delate na
+                                podlagi enih in istih skupnih informacij.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-grid">
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="icon"> 	&#xf2b9;</div>
+                                <span>01</span>
+                            </div>
+                            <h3>Spoznavni pogovor</h3>
+                            <p>Vse se začne pri vas. Sedemo skupaj (v živo ali prek spleta) in prisluhnemo vašim željam, izzivom in ciljem.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="icon">&#xf5ae;</div>
+                                <span>02</span>
+                            </div>
+                            <h3>Načrtovanje in dizajn</h3>
+                            <p>Pripravimo vizualni predlog in strukturo vaše nove spletne strani ali storitve.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="icon">&#xf121;</div>
+                                <span>03</span>
+                            </div>
+                            <h3>Izvedba in razvoj</h3>
+                            <p>Vašo idejo spremenimo v delujočo kodo, poskrbimo za hitro delovanje, varnost in prilagodljivost za mobilne naprave.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="icon">&#xf058;</div>
+                                <span>04</span>
+                            </div>
+                            <h3>Testiranje in predaja v uporabo</h3>
+                            <p>Ko smo prepričani, da vse deluje brezhibno, projekt objavimo.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+            <div id="prekinitev-1">
+                <p id="text">Od prve ideje do zadnjega klika - <span id="barva_texta">ustvarjamo spletne trgovine in oglase,</span> ki povečujejo vašo prodajo</p>
+                <a href="index.html#kontakt-obr-vse"><button><p>ZAČNIMO S SODELOVANJEM</p></button></a>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="o_nas" data-bg = "#ffffff">
+                <div id="leva_o_nas" >
+                    <span class="tag">KAJ JE SKRABLWEB</span>
+                    <h2>SKRABLWEB</h2>
+                    <div class="menu">
+
+                        <div class="menu-item">
+                            <button class="menu-title"><h3>Kdo sem jaz</h3></button>
+                            <div class="menu-content"><p>Moje ime je Rok Škrabl in sem dijak srednje šole tehniških strok Šiška. Kljub svojim letom se že cca. eno leto ukvarjam z izdelovanjem spletnih strani.</p></div>
+                        </div>
+
+                        <div class="menu-item">
+                            <button class="menu-title"><h3>Kaj lahko pričakujete od mene</h3></button>
+                            <div class="menu-content"><p>Od mene lahko pričakujete natančnost, prilagodljivost, saj je vsaka stran narejena po naročilu in željah, ter komunikativnost. Vsako stran tudi prilagodim na velikosti vseh zaslonov in osnovno optimiziram za brskalnike (SEO)</p></div>
+                        </div>
+
+                        <div class="menu-item">
+                            <button class="menu-title"><h3>Na kakšen način delujem</h3></button>
+                            <div class="menu-content"><p>Najprej se z vsako stranko slišim po telefonu ali pa v živo da mi pove če ima že kakšne želje za izgled strani. Ko je stranki dizajn všeč začnem programirati stran. DELAM IZKLJUČNO PREKO ŠTUDENTSKEGA SERVISA!</p></div>
+                        </div>
+
+                        <div class="menu-item">
+                            <button class="menu-title"><h3>Cene izdelave spletne strani</h3></button>
+                            <div class="menu-content"><p>Največje vprašanje je vedno "koliko pa to stane?" to je odvisno od kompleksnosti izdelka, ki ga želite in od časovnega roka. Lahko pa povem, da se cene za spletno stran začnejo na 150€ in končajo na več tisoč €</p></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div id="desna_o_nas">
+                    <img src="index/onas.webp" alt="primeri izdelave spletne strani" loading="lazy">
+                </div>
+
+
+                
+
+
+                
+            </div>
+
+
+
+            
+
+
+
+
+            <div id="storitve" data-bg = "#050a23">
+                <canvas id="bgShader"></canvas>
+                <a href="dizajn.html">
+                    <div class="storitev">
+                        <div class="oblikovanje"></div>
+                        <div class="text">
+                            <h3>Grafično oblikovanje</h3>
+                            <p>Vizualna podoba je prvi stik stranke z vašo blagovno znamko. Ne gre le za "lepe slike", temveč za strateško komuniciranje vaših vrednot. Moje oblikovanje temelji na psihologiji barv, tipografiji in modernih trendih.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="stran.html">
+                    <div class="storitev">
+                        <div class="stran"></div>
+                        <div class="text">
+                            <h3>Spletna stran</h3>
+                            <p>pletna stran dela za vas 24/7. Zato se sredotočam na kombinacijo estetike in vrhunske uporabniške izkušnje (UX/UI). Vsaka stran, ki jo ustvarim, je tehnično optimizirana, varna in popolnoma prilagojena mobilnim napravam.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="trgovina.html">
+                    <div class="storitev">
+                        <div class="trgovina"></div>
+                        <div class="text">
+                            <h3>Spletna trgovina</h3>
+                            <p>Moje spletne trgovine so zasnovane tako, da kupca vodijo od prvega klika do zaključenega nakupa brez nepotrebnih zapletov. Poskrbim za intuitivno iskanje izdelkov, pregledne kategorije in hitro blagajno.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="marketing.html">
+                    <div class="storitev">
+                        <div class="smma"></div>
+                        <div class="text">
+                            <h3>Oglaševanje</h3>
+                            <p>Ko potrebujete rezultate "čez noč", je oglaševanje najučinkovitejše orodje. Vašo ponudbo prikažem točno tistim ljudem, ki vaš izdelek ali storitev v tem trenutku iščejo ali potrebujejo.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="seo.html">
+                    <div class="storitev">
+                        <div class="seo"></div>
+                        <div class="text">
+                            <h3>SEO optimizacija</h3>
+                            <p>SEO optimizacija poskrbi, da se vaša stran ob relevantnih iskalnih poizvedbah pojavi na najvišjih mestih v Googlu. To pomeni več organskega obiska brez nenehnega plačevanja klikov.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="katalogi.html">
+                    <div class="storitev">
+                        <div class="hitrost"></div>
+                        <div class="text">
+                            <h3>Katalogi in slikanje</h3>
+                            <p>Fizični materiali imajo v svetu digitalizacije še vedno posebno težo. Da bi vaš katalog res izstopal, potrebujete vrhunsko fotografijo. Ponujam celovito izvedbo – od pritiska na sprožilec do oddaje datotek v tiskarno.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="kontakt-obr-vse">
+                <div id="kontakt-obr">
+                    <span class="tag">KONTAKTIRAJTE ZA POVPRAŠEVANJE</span>
+                    
+
+
+                    
+                    <div class="contact-container">
+                    <h2>Pošljite povpraševanje</h2>
+                    <p>Izpolnite obrazec in pripravili vam bomo ponudbo po vaši meri.</p>
+
+                    <form action="https://formsubmit.co/skrablrok1@gmail.com" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ime">Ime</label>
+                                <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="priimek">Priimek</label>
+                                <input type="text" id="priimek" name="priimek" placeholder="Vaš priimek" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-naslov</label>
+                                <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Telefonska številka</label>
+                                <input type="tel" id="telefon" name="telefon" placeholder="041 000 000">
+                            </div>
+                        </div>
+
+                        <div class="services-section">
+                            <label>Katere storitve vas zanimajo? (izberete lahko več)</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="Grafično oblikovanje"> Grafično oblikovanje
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="Izdelava spletne strani"> Izdelava spletne strani
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="Izdelava spletne trgovine"> Izdelava spletne trgovine
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="SEO optimizacija"> SEO optimizacija
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="Oglaševanje"> Oglaševanje
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="storitve" value="Brošura s slikanjem"> Izdelava brošure s slikanjem
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sporocilo">Vaše sporočilo</label>
+                            <textarea id="sporocilo" name="sporocilo" rows="5" placeholder="Opišite vaše želje..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Pošlji povpraševanje</button>
+                    </form>
+                </div>
+
+
+
+                
+
+                
+                    
+                </div>
+            <div id="globe-wrap">
+                <div id="icon-globe"></div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+             
+
+
+
+
+            
+
+
+            
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo_noga">
+                    <span class="logo-icon"><img src="index/logo_noga.webp" alt=""></span> <span class="logo-text">SKRABLWEB</span>
+                </div>
+                <p class="brand-description">
+                   Vaš partner za sodobno izdelavo spletnih strani, kjer združujemo napredno tehnologijo s kreativnim dizajnom.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>STUDIO</h3>
+                <ul>
+                    <li><a href="index.html#storitve">Storitve</a></li>
+                    <li><a href="index.html#o_nas">O meni</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="index.html#kontakt-obr-vse">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>KONTAKT</h3>
+                <ul>
+                    <li><a href="mailto:skrablrok1@gmail.com">skrablrok1@gmail.com</a></li>
+                    <li><a href="tel:+386 30 239 005">+386 30 239 005</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SKRABLWEB Internetne storitve - Vse pravice pridržane</p>
+        </div>
+    </footer>
+    
+    
+
+
+
+    <script src="index.js" defer></script>
+<script>
+(function () {
+'use strict';
+
+/* ─── Metaball liquid-hover effect ─── */
+
+const c1 = document.getElementById('liquidCanvas1');
+const c2 = document.getElementById('liquidCanvas2');
+if (!c1 || !c2) return;
+
+const balls = [];
+let ambT = 0, lastSpawn = 0, hovering = false, lastFrame = 0;
+
+const dpr       = () => window.innerWidth <= 765 ? Math.min(window.devicePixelRatio || 1, 1) : (window.devicePixelRatio || 1);
+const isMob     = () => window.innerWidth <= 765;
+const active    = () => isMob() ? c2 : c1;
+const blobScale = () => isMob() ? 0.55 : 1;
+
+let cachedTB = null;
+function updateTextBounds() {
+    const tEl   = document.getElementById(isMob() ? 'naslov2' : 'naslov1');
+    const tRect = tEl.getBoundingClientRect();
+    const cRect = active().getBoundingClientRect();
+    cachedTB = {
+        cx: tRect.left - cRect.left + tRect.width  / 2,
+        cy: tRect.top  - cRect.top  + tRect.height / 2,
+        w:  tRect.width,
+        h:  tRect.height
+    };
+}
+
+function fit(c) {
+    const { width, height } = c.parentElement.getBoundingClientRect();
+    c.width  = width  * dpr();
+    c.height = height * dpr();
+    c.style.width  = width  + 'px';
+    c.style.height = height + 'px';
+}
+
+/* Sync SVG clipPath text nodes to the rendered heading position */
+function updateClips() {
+    const tmp = document.createElement('canvas').getContext('2d');
+    const defs = [
+        { canvas: c1, textId: 'naslov1',  clipIds: ['svgClipText1'],               lines: ['SKRABLWEB']     },
+        { canvas: c2, textId: 'naslov2',  clipIds: ['svgClipText2a','svgClipText2b'], lines: ['SKRABL','WEB'] }
+    ];
+    defs.forEach(({ canvas, textId, clipIds, lines }) => {
+        if (canvas.style.display === 'none') return;
+        const tEl   = document.getElementById(textId);
+        const tRect = tEl.getBoundingClientRect();
+        const cRect = canvas.getBoundingClientRect();
+        const cx    = tRect.left - cRect.left + tRect.width  / 2;
+        const fs    = parseFloat(getComputedStyle(tEl).fontSize);
+
+        /* fontBoundingBox metrics match CSS content-area calculation exactly */
+        tmp.font = `900 ${fs}px 'Bebas Neue', sans-serif`;
+        const m   = tmp.measureText('W');
+        const asc = m.fontBoundingBoxAscent  ?? m.actualBoundingBoxAscent  ?? fs * 0.8;
+        const dsc = m.fontBoundingBoxDescent ?? m.actualBoundingBoxDescent ?? fs * 0.2;
+
+        const lineH = tRect.height / lines.length;
+        clipIds.forEach((id, i) => {
+            const el      = document.getElementById(id);
+            const lineTop = (tRect.top - cRect.top) + i * lineH;
+            /* centre the (asc+dsc) content area inside lineH, then baseline = top + asc */
+            const baseline = lineTop + (lineH - asc - dsc) / 2 + asc;
+            el.setAttribute('x', cx);
+            el.setAttribute('y', baseline);
+            el.setAttribute('font-size', fs);
+            el.setAttribute('dominant-baseline', 'auto');
+            el.textContent = lines[i];
+        });
+    });
+}
+
+function toggle() {
+    const a = active(), b = a === c1 ? c2 : c1;
+    a.style.display = 'block';
+    b.style.display = 'none';
+    fit(a);
+    b.getContext('2d').clearRect(0, 0, b.width, b.height);
+    updateClips();
+    updateTextBounds();
+}
+
+function spawn(x, y, fast) {
+    const now = performance.now();
+    if (now - lastSpawn < 18) return;
+    lastSpawn = now;
+    const n = fast ? 3 : 1;
+    const bs = blobScale();
+    for (let i = 0; i < n; i++) {
+        balls.push({
+            x: x + (Math.random() - .5) * 16,
+            y: y + (Math.random() - .5) * 16,
+            r: 6,
+            maxR: (fast ? 95 + Math.random() * 50 : 55 + Math.random() * 40) * bs,
+            vx: (Math.random() - .5) * 1.4,
+            vy: -(Math.random() * .9 + .2),
+            life: 1,
+            decay: .010 + Math.random() * .007,
+            grow:  2.8 + Math.random() * 3
+        });
+    }
+}
+
+const hdr = document.querySelector('header');
+let px = null, py = null;
+
+hdr.addEventListener('mousemove', e => {
+    hovering = true;
+    const r = active().getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    spawn(x, y, px !== null && Math.hypot(x - px, y - py) > 18);
+    px = x; py = y;
+});
+hdr.addEventListener('mouseleave', () => { hovering = false; px = py = null; });
+hdr.addEventListener('touchmove', e => {
+    hovering = true;
+    const r = active().getBoundingClientRect();
+    spawn(e.touches[0].clientX - r.left, e.touches[0].clientY - r.top, false);
+}, { passive: true });
+hdr.addEventListener('touchend', () => { hovering = false; });
+
+window.addEventListener('resize', toggle);
+
+function frame(ts = 0) {
+    if (isMob() && ts > 0 && ts - lastFrame < 50) { requestAnimationFrame(frame); return; }
+    lastFrame = ts;
+    const c = active(), ctx = c.getContext('2d'), d = dpr();
+    const W = c.width / d, H = c.height / d;
+
+    ambT += .013;
+    const mob = isMob();
+    if (!hovering && balls.length < (mob ? 4 : 12) && Math.random() < (mob ? 0.09 : 0.14)) {
+        const bs = blobScale();
+        const tb = cachedTB || { cx: W * .5, cy: H * .5, w: W, h: H };
+        /* Three slowly drifting orbits centred on the text, not the canvas */
+        const pts = [
+            [tb.cx + Math.sin(ambT * .9)   * tb.w * .38, tb.cy + Math.cos(ambT * .7)  * tb.h * .20],
+            [tb.cx + Math.cos(ambT * .6)   * tb.w * .32, tb.cy + Math.sin(ambT * 1.1) * tb.h * .16],
+            [tb.cx + Math.sin(ambT * 1.25) * tb.w * .28, tb.cy + Math.cos(ambT * .5)  * tb.h * .18],
+        ];
+        const [ax, ay] = pts[Math.floor(Math.random() * pts.length)];
+        balls.push({
+            x: ax + (Math.random() - .5) * tb.w * .07,
+            y: ay + (Math.random() - .5) * tb.h * .08,
+            r: 6, maxR: (50 + Math.random() * 32) * bs,
+            vx: (Math.random() - .5) * 1.2,
+            vy: (Math.random() - 0.5) * 0.55,
+            life: 1, decay: .0032, grow: 2.0
+        });
+    }
+
+    ctx.save();
+    ctx.scale(d, d);
+    ctx.clearRect(0, 0, W, H);
+
+    for (let i = balls.length - 1; i >= 0; i--) {
+        const b = balls[i];
+        b.r   = Math.min(b.r + b.grow, b.maxR);
+        b.x  += b.vx;
+        b.y  += b.vy;
+        b.vy *= .987;
+        b.life -= b.decay;
+        if (b.life <= 0) { balls.splice(i, 1); continue; }
+        ctx.globalAlpha = Math.min(b.life * 2.2, 1);
+        ctx.beginPath();
+        ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+        ctx.fillStyle = '#fff';
+        ctx.fill();
+    }
+
+    ctx.restore();
+    requestAnimationFrame(frame);
+}
+
+document.fonts.ready.then(() => { toggle(); frame(); });
+})();
+</script>
+
+</body>
+</html>
