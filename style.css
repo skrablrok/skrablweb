@@ -2179,6 +2179,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         width: 100%;
         padding-left: 0;
         box-sizing: border-box;
+        overflow: hidden;
     }
     #globe-wrap {
         width: clamp(260px, 80vw, 320px);
@@ -2797,18 +2798,7 @@ textarea:focus {
 }
 
 /* Contact form section — smaller screens */
-@media (max-width: 480px) {
-    #kontakt-obr-vse {
-        padding: 10vw 4vw;
-        gap: 4vw;
-    }
-    #kontakt-obr {
-        width: 100%;
-        padding-left: 0;
-    }
-}
 @media (max-width: 380px) {
-    #kontakt-obr-vse { padding: 10vw 3vw; }
     .form-row { flex-direction: column; }
     .checkbox-grid { grid-template-columns: 1fr; }
 }
