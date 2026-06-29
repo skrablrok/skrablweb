@@ -534,6 +534,9 @@ const c1 = document.getElementById('liquidCanvas1');
 const c2 = document.getElementById('liquidCanvas2');
 if (!c1 || !c2) return;
 
+// Touch devices can't hover — skip the GPU-intensive canvas entirely
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
 const balls = [];
 let ambT = 0, lastSpawn = 0, hovering = false, lastFrame = 0;
 

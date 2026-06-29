@@ -799,8 +799,9 @@ if (element) typeEffect();
         'fas fa-database',
     ];
 
-    const COUNT  = 20;
-    const RADIUS = 240;
+    const isMobileGlobe = window.innerWidth < 1000;
+    const COUNT  = isMobileGlobe ? 10 : 20;
+    const RADIUS = isMobileGlobe ? 108 : 240;
 
     // Fibonacci sphere — evenly distributed points on a sphere
     for (let i = 0; i < COUNT; i++) {
@@ -820,6 +821,7 @@ if (element) typeEffect();
     let rotX = 15, rotY = 0;
     let velX = 0,  velY = 0.22;
     let isHovering = false;
+    let lastGlobeTick = 0;
 
     wrap.addEventListener('mouseenter', () => { isHovering = true; });
     wrap.addEventListener('mouseleave', () => { isHovering = false; });
@@ -831,7 +833,10 @@ if (element) typeEffect();
         velX = -dy * 3.5;
     });
 
-    (function tick() {
+    (function tick(ts = 0) {
+        // Throttle to ~20 fps on mobile to save battery / GPU
+        if (isMobileGlobe && ts > 0 && ts - lastGlobeTick < 50) { requestAnimationFrame(tick); return; }
+        lastGlobeTick = ts;
         rotY += velY;
         rotX += velX;
         // smoothly ease back to slow auto-spin when not hovered

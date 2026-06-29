@@ -2158,13 +2158,20 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 3vw;
+        gap: 6vw;
+        overflow: visible;
+        padding-bottom: 8vw;
     }
     #kontakt-obr{
         width: 90%;
     }
     #globe-wrap {
-        display: none;
+        width: 260px;
+        height: 260px;
+        flex-shrink: 0;
+    }
+    #icon-globe i {
+        font-size: 20px;
     }
 }
 
@@ -2831,5 +2838,139 @@ textarea:focus {
     .ref-stage { min-height: clamp(200px, 55vw, 380px); }
     .ref-carousel { height: clamp(200px, 55vw, 380px); }
     .detail-body { padding-left: 5%; }
+}
+
+/* ============================================================
+   MOBILE PERFORMANCE — disable heavy compositor hints on touch
+   ============================================================ */
+@media (hover: none) {
+    #storitve .storitev {
+        will-change: auto;
+        transform-style: flat;
+    }
+    .ref-carousel .slika {
+        will-change: auto;
+    }
+    /* Stop the continuous float animation on touch — saves a
+       compositor layer and one rAF-equivalent per frame       */
+    #desna_o_nas img {
+        animation: none;
+    }
+}
+
+/* ============================================================
+   MOBILE MARQUEE — reduce height so it doesn't dominate the
+   viewport on phones; content is decorative, not primary
+   ============================================================ */
+@media (max-width: 768px) {
+    #scroll-marquee {
+        min-height: 55vh;
+    }
+}
+
+/* ============================================================
+   MOBILE HERO — keep button and typewriter from overlapping
+   ============================================================ */
+@media (max-width: 550px) {
+    #text1 {
+        top: 65%;
+    }
+    .gumb_kontakt {
+        top: 82%;
+    }
+}
+@media (max-width: 420px) {
+    #text1 {
+        top: 62%;
+        font-size: clamp(12px, 3.5vw, 20px);
+    }
+    .gumb_kontakt {
+        top: 80%;
+    }
+}
+
+/* ============================================================
+   MOBILE GLOBE — hide the ring glow that can look odd at 260px
+   ============================================================ */
+@media (max-width: 1000px) {
+    #globe-wrap::before {
+        display: none;
+    }
+}
+
+/* ============================================================
+   MOBILE NAV — ensure the dropdown in the mobile menu has
+   readable spacing and doesn't clip on small phones
+   ============================================================ */
+@media (max-width: 400px) {
+    .navlist {
+        width: 220px;
+    }
+    .navlist a {
+        font-size: 17px;
+    }
+}
+
+/* ============================================================
+   MOBILE WORKFLOW — reduce horizontal padding on narrow phones
+   ============================================================ */
+@media (max-width: 400px) {
+    .workflow {
+        padding: 8vw 4vw;
+    }
+    .workflow-left h2 {
+        font-size: clamp(32px, 9vw, 60px);
+    }
+}
+
+/* ============================================================
+   MOBILE CONTACT FORM — inputs need a tad more breathing room
+   ============================================================ */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: clamp(16px, 4vw, 28px) !important;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .services-section {
+        padding: 10px;
+    }
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+/* ============================================================
+   MOBILE O-NAS — accordion items need more tap-friendly padding
+   ============================================================ */
+@media (max-width: 600px) {
+    .menu-item {
+        padding: 3vw 2vw;
+    }
+    .menu-title h3 {
+        font-size: clamp(14px, 4vw, 20px);
+    }
+    .menu-content {
+        font-size: clamp(12px, 3.2vw, 16px);
+    }
+}
+
+/* ============================================================
+   MOBILE FOOTER — logo icon minimum size
+   ============================================================ */
+@media (max-width: 480px) {
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+    }
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    .brand-description {
+        font-size: 0.9rem;
+    }
 }
 
