@@ -1543,7 +1543,7 @@ a{
 }
 
 
-@media(max-width: 814px){
+@media(min-width: 521px) and (max-width: 814px){
     #storitve{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1585,7 +1585,7 @@ a{
         padding-right: 7vw;
     }
     .storitev{
-        width: 44vw;
+        width: 82vw;
         height: fit-content;
         padding-bottom: 5vw;
     }
@@ -2765,23 +2765,6 @@ textarea:focus {
         height: auto;
         aspect-ratio: 4 / 3;
     }
-}
-@media (max-width: 620px) {
-    #storitve {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3vw;
-        padding: 6vw 4vw;
-    }
-    .storitev { width: 100%; }
-}
-@media (max-width: 420px) {
-    #storitve {
-        grid-template-columns: 1fr;
-        padding: 6vw 5vw;
-    }
-    .storitev { width: 100%; }
-    .storitev .text h3 { font-size: clamp(14px, 4.5vw, 150px); }
-    .storitev .text p  { font-size: clamp(11px, 3vw, 120px); }
 }
 
 /* Break banner (#prekinitev-1) — small screen refinements */
