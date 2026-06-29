@@ -2171,15 +2171,16 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        overflow: hidden;
+        padding: 6vw 0 10vw 0;
         gap: 6vw;
-        overflow: visible;
-        padding: 6vw 8vw 10vw 8vw;
     }
     #kontakt-obr{
-        width: 100%;
-        padding-left: 0;
+        width: 84vw;
+        max-width: 560px;
+        padding: 0;
         box-sizing: border-box;
-        overflow: hidden;
+        align-items: stretch;
     }
     #globe-wrap {
         width: clamp(260px, 80vw, 320px);
