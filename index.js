@@ -800,8 +800,8 @@ if (element) typeEffect();
     ];
 
     const isMobileGlobe = window.innerWidth < 1000;
-    const COUNT  = isMobileGlobe ? 10 : 20;
-    const RADIUS = isMobileGlobe ? 108 : 240;
+    const COUNT  = isMobileGlobe ? 12 : 20;
+    const RADIUS = isMobileGlobe ? 135 : 240;
 
     // Fibonacci sphere — evenly distributed points on a sphere
     for (let i = 0; i < COUNT; i++) {
@@ -823,15 +823,18 @@ if (element) typeEffect();
     let isHovering = false;
     let lastGlobeTick = 0;
 
-    wrap.addEventListener('mouseenter', () => { isHovering = true; });
-    wrap.addEventListener('mouseleave', () => { isHovering = false; });
-    wrap.addEventListener('mousemove',  e  => {
-        const r  = wrap.getBoundingClientRect();
-        const dx = (e.clientX - (r.left + r.width  / 2)) / (r.width  / 2);
-        const dy = (e.clientY - (r.top  + r.height / 2)) / (r.height / 2);
-        velY = dx * 3.5;
-        velX = -dy * 3.5;
-    });
+    // Mouse interaction only on desktop — mobile just auto-spins
+    if (!isMobileGlobe) {
+        wrap.addEventListener('mouseenter', () => { isHovering = true; });
+        wrap.addEventListener('mouseleave', () => { isHovering = false; });
+        wrap.addEventListener('mousemove',  e  => {
+            const r  = wrap.getBoundingClientRect();
+            const dx = (e.clientX - (r.left + r.width  / 2)) / (r.width  / 2);
+            const dy = (e.clientY - (r.top  + r.height / 2)) / (r.height / 2);
+            velY = dx * 3.5;
+            velX = -dy * 3.5;
+        });
+    }
 
     (function tick(ts = 0) {
         // Throttle to ~20 fps on mobile to save battery / GPU
