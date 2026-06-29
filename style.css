@@ -2180,12 +2180,19 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         box-sizing: border-box;
     }
     #globe-wrap {
-        width: 320px;
-        height: 320px;
+        width: clamp(260px, 80vw, 320px);
+        height: clamp(260px, 80vw, 320px);
         flex-shrink: 0;
     }
     #icon-globe i {
-        font-size: 28px;
+        font-size: 34px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 

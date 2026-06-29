@@ -801,7 +801,8 @@ if (element) typeEffect();
 
     const isMobileGlobe = window.innerWidth < 1000;
     const COUNT  = isMobileGlobe ? 12 : 20;
-    const RADIUS = isMobileGlobe ? 135 : 240;
+    const mobileGlobeSize = Math.max(260, Math.min(320, Math.round(window.innerWidth * 0.8)));
+    const RADIUS = isMobileGlobe ? Math.min(135, Math.round(mobileGlobeSize / 2) - 20) : 240;
 
     // Fibonacci sphere — evenly distributed points on a sphere
     for (let i = 0; i < COUNT; i++) {
