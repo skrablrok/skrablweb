@@ -11,7 +11,7 @@
 
     // Lock scroll while overlay is visible — use a class on html so that
     // scrollbar-gutter:stable keeps the gutter reserved and no CLS occurs
-    document.documentElement.classList.add('intro-active');
+    document.body.classList.add('intro-active');
 
     // Split "SKRABLWEB" into individually-animated letters
     const logo = document.getElementById('intro-logo');
@@ -29,7 +29,7 @@
 
     setTimeout(() => {
         overlay.classList.add('exit');
-        document.documentElement.classList.remove('intro-active');
+        document.body.classList.remove('intro-active');
         sessionStorage.setItem('swIntro', '1');
     }, EXIT_AT);
 
