@@ -1800,54 +1800,49 @@ a{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 10vw 0;
+        padding: 10vw 6vw;
+        box-sizing: border-box;
         gap: 5vw;
         overflow-x: hidden;
     }
     #leva_o_nas{
-        width: 88%;
+        width: 100%;
         padding-left: 0;
         box-sizing: border-box;
-        overflow: hidden;
     }
     .menu-item{
         grid-template-columns: 1fr;
         padding: 3vw 2vw;
+        box-sizing: border-box;
     }
     .menu-content p{
         word-break: break-word;
         overflow-wrap: break-word;
     }
     #desna_o_nas{
-        width: 88%;
+        width: 100%;
         justify-content: center;
     }
     #desna_o_nas img{
-        width: 70%;
+        width: 65%;
         display: block;
         margin: 0 auto;
     }
 }
 @media(max-width: 600px){
-    .menu-title h3{
-        padding-bottom: 1vw;
-        padding-top: 1.5vw;
-        font-size: clamp(14px, 3.5vw, 20px);
+    #o_nas{
+        padding: 12vw 7vw;
     }
-    #leva_o_nas{
-        width: 88%;
+    .menu-title h3{
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+        font-size: clamp(14px, 3.5vw, 18px);
     }
     .menu-content{
-        font-size: clamp(12px, 3vw, 16px);
-    }
-    #desna_o_nas{
-        width: 88%;
-        justify-content: center;
+        font-size: clamp(12px, 3vw, 14px);
     }
     #desna_o_nas img{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
+        width: 55%;
     }
 }
 @media(max-width: 400px){
