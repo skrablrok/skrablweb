@@ -493,7 +493,6 @@ header.show {
 #skrablweb #naslov1{
     width: 100%;
     text-align: center;
-    line-height: 1;
     background: linear-gradient(to right, #f07030, #ffaa50);
     -webkit-background-clip: text;
     background-clip: text;
