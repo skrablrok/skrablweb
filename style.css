@@ -491,6 +491,8 @@ header.show {
     justify-content: center;
 }
 #skrablweb #naslov1{
+    width: 100%;
+    text-align: center;
     background: linear-gradient(to right, #f07030, #ffaa50);
     -webkit-background-clip: text;
     background-clip: text;
@@ -1727,7 +1729,7 @@ a{
 /* posamezna vrstica */
 .menu-item {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     align-items: center;
     padding: 1vw 1vw;
     position: relative;
