@@ -1726,7 +1726,7 @@ a{
 /* posamezna vrstica */
 .menu-item {
     display: grid;
-    grid-template-columns: 1fr 2;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     padding: 1vw 1vw;
     position: relative;
@@ -1802,10 +1802,21 @@ a{
         width: 100%;
         padding: 10vw 0;
         gap: 5vw;
+        overflow-x: hidden;
     }
     #leva_o_nas{
         width: 88%;
         padding-left: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .menu-item{
+        grid-template-columns: 1fr;
+        padding: 3vw 2vw;
+    }
+    .menu-content p{
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     #desna_o_nas{
         width: 88%;
@@ -1821,9 +1832,13 @@ a{
     .menu-title h3{
         padding-bottom: 1vw;
         padding-top: 1.5vw;
+        font-size: clamp(14px, 3.5vw, 20px);
     }
     #leva_o_nas{
         width: 88%;
+    }
+    .menu-content{
+        font-size: clamp(12px, 3vw, 16px);
     }
     #desna_o_nas{
         width: 88%;
