@@ -1798,6 +1798,7 @@ a{
 @media(max-width: 1100px){
     #o_nas{
         flex-direction: column;
+        align-items: center;
         width: 100%;
         padding: 10vw 0;
         gap: 5vw;
@@ -1808,9 +1809,12 @@ a{
     }
     #desna_o_nas{
         width: 88%;
+        justify-content: center;
     }
     #desna_o_nas img{
         width: 70%;
+        display: block;
+        margin: 0 auto;
     }
 }
 @media(max-width: 600px){
@@ -1819,13 +1823,16 @@ a{
         padding-top: 1.5vw;
     }
     #leva_o_nas{
-        width: 92%;
+        width: 88%;
     }
     #desna_o_nas{
-        width: 92%;
+        width: 88%;
+        justify-content: center;
     }
     #desna_o_nas img{
-        width: 55%;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
     }
 }
 @media(max-width: 400px){
