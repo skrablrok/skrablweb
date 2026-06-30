@@ -6,12 +6,22 @@
     // Skip on return visits within the same browser session
     if (sessionStorage.getItem('swIntro')) {
         overlay.remove();
+        const _n = document.getElementById('naslov1');
+        if (_n) _n.style.opacity = '1';
         return;
     }
 
     // Lock scroll while overlay is visible — use a class on html so that
     // scrollbar-gutter:stable keeps the gutter reserved and no CLS occurs
     document.body.classList.add('intro-active');
+
+    // Reveal h1 after the font-display:optional block period (100ms) has passed.
+    // While opacity:0, the element is not a CLS candidate; the CSS opacity
+    // transition that follows is compositor-only and also excluded from CLS.
+    setTimeout(() => {
+        const n = document.getElementById('naslov1');
+        if (n) n.style.opacity = '1';
+    }, 150);
 
     // Split "SKRABLWEB" into individually-animated letters
     const logo = document.getElementById('intro-logo');
