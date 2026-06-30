@@ -1810,7 +1810,7 @@ a{
         width: 88%;
     }
     #desna_o_nas img{
-        width: 100%;
+        width: 82%;
     }
 }
 @media(max-width: 600px){
@@ -1825,7 +1825,7 @@ a{
         width: 92%;
     }
     #desna_o_nas img{
-        width: 100%;
+        width: 80%;
     }
 }
 @media(max-width: 400px){
